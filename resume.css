@@ -1,15 +1,41 @@
 body {
-	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-	text-align: center;
-	margin: 30px;
+	text-align: left;
+	border-color: #cc0066;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 4px;
+	/*margin: 10px;*/
+	margin-top: 1%;
+	padding-bottom: 3%;
 }
 
 h1 {
-	color: violet;
+	padding: 1%;
 }
 
+h5 {
+	font-size: 14px;
+}
 
-h3.jobtitle {
-	font-weight: bold;
-	color: red;
+div{
+	background: white;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 0.01%;
+
+	/*border-radius: 2px;
+	border-color: black;
+	border-style: solid;*/
+}
+
+.position {
+    font-style: italic;
+}
+
+.job {
+	color: #cc0066;
+}
+
+.sectiontitle {
+	color: #0099cc;
 }
