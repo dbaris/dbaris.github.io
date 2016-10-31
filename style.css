@@ -1,48 +1,68 @@
 body {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+	font-family: "Abhaya Libre", serif;
 	/*font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;*/
 	margin: 30px;
 	text-align: center;
+	color: black;
 }
 
-h1 {
-	color: #0099cc;
+h1{
+	font-family: "Satisfy", serif;
+	color: black;
 	text-align: center;
 	text-shadow: 2px 2px white;
-	font-size: 36px;
+	font-size: 50px;
 }
 
 h2 {
-	color: #cc0066;
+	/*color: #cc0066;*/
 	text-align: center;
 }
 
 #image {
-	/*margin: 5%;*/
-	padding: 2%;
-	width: 30%;
-
-	border-color: #cc0066;
-	border-style: solid;
-	border-radius: 10px;
-	border-width: 4px;
+	height:250px;
+    width:250px;
+    position:relative;    
+    border-radius:100%;
+    overflow:hidden;
 
 	margin: 0 auto;
+	margin-top: 5%;
 
+}
+
+img {
+	position: absolute;
+	left:-50%; right:-50%; top:0;
+    margin:auto;
+    height:100%; width:auto;
 }
 
 div.pagelinks{
 	display: inline-block;
+	color: black;
 	/*background: black;*/
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 4%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 2%;
+	font-size: 20px;
+	font-family: "Satisfy", serif;
 }
 
 a {
+	color: black;
 	text-decoration: none;
-	font-size: 20px;
-	color: #0099cc;
-
+	/*font-size: 20px;*/
+	/*color: #0099cc;*/
 }
 
+#divbar {
+	font-weight: bold;
+	margin: 4%;
+	text-align: center;
+}
+
+#menu {
+	text-align: center;
+}
