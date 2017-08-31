@@ -23,7 +23,7 @@ h1 {
 h2 {
 	font-family: "Yeseva One", serif;
 	color: #9C3848;
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 
 .title {
@@ -87,7 +87,7 @@ h2 {
 
 img {
 	width: 25vw;
-	padding: 5vh;
+	padding: 3vh;
 	border-left: 4px solid #9C3848;
 	border-bottom: 4px solid #9C3848;
 
