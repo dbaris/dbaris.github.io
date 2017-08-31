@@ -1,68 +1,184 @@
 body {
 
-	font-family: "Abhaya Libre", serif;
-	/*font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;*/
-	margin: 30px;
+	font-family: "Yeseva One", serif;
 	text-align: center;
 	color: black;
-}
-
-h1{
-	font-family: "Satisfy", serif;
-	color: black;
-	text-align: center;
-	text-shadow: 2px 2px white;
-	font-size: 50px;
-}
-
-h2 {
-	/*color: #cc0066;*/
-	text-align: center;
-}
-
-#image {
-	height:250px;
-    width:250px;
-    position:relative;    
-    border-radius:100%;
-    overflow:hidden;
-
-	margin: 0 auto;
-	margin-top: 5%;
-
-}
-
-img {
-	position: absolute;
-	left:-50%; right:-50%; top:0;
-    margin:auto;
-    height:100%; width:auto;
-}
-
-div.pagelinks{
-	display: inline-block;
-	color: black;
-	/*background: black;*/
-	margin-left: 3%;
-	margin-right: 3%;
-	margin-top: 2%;
-	font-size: 20px;
-	font-family: "Satisfy", serif;
+	height: 100%;
 }
 
 a {
 	color: black;
-	text-decoration: none;
-	/*font-size: 20px;*/
-	/*color: #0099cc;*/
+	
 }
 
-#divbar {
-	font-weight: bold;
-	margin: 0 auto;
-	text-align: center;
+h1 {
+	text-align: left;
+	padding: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 10vh;
+}
+
+h2 {
+	font-family: "Yeseva One", serif;
+	color: #9C3848;
+	font-size: 2vw;
+}
+
+.title {
+	font-family: "Yeseva One", serif;
+	color: black;
+	text-decoration: none;
+	width: 40vw;
+	text-align: left;
+}
+
+.title:hover {
+	color: #EC4E20;   /* orange */
+}
+
+.black {
+	color: black;
+}
+
+
+
+.main {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+.container {
+	height: 90vh;
+}
+
+#github, #linkedin{
+	text-decoration-color: #EC9A29;
+}
+
+#name {
+	width: 40vw;
+	vertical-align: top;
+	display: inline-block;
 }
 
 #menu {
-	text-align: center;
+	text-align: right;
+	display: inline-block;
+	width: 40vw;
+	vertical-align: top;
+
+}
+
+#page {
+	display: inline-block;
+	width: 80vw;
+	text-align: left;
+}
+
+#image {
+	width: 40vw;
+	display: inline-block;
+}
+
+
+
+img {
+	width: 25vw;
+	padding: 5vh;
+	border-left: 4px solid #9C3848;
+	border-bottom: 4px solid #9C3848;
+
+}
+
+div.pagelinks{
+	text-align: right;
+	color: black;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 2%;
+	font-size: 4vh;
+	font-family: "Playfair Display", serif;
+	display: block;
+	float: right;
+	clear: right;
+	text-decoration-color: #EC9A29;
+
+}
+
+button {
+	display: block;
+	text-align: right;
+	color: black;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 2%;
+	font-size: 4vh;
+	font-family: "Playfair Display", serif;
+	border: none;
+	text-decoration: underline;
+	background: none;
+	outline: none;
+	text-decoration-color: #EC9A29;
+	float: right;
+	clear: right;
+	/*border: 1px solid blue;*/
+}
+
+button:hover, div.pagelinks:hover {
+	background: #EC9A29;
+}
+
+.clicked {
+	background: #EC9A29;
+}
+
+#bioText {
+	font-family: "Playfair Display", serif;
+	width: 39vw;
+	text-align: right;
+	display: none;
+	vertical-align: top;
+}
+
+#bioP {
+	font-size: 1.75vw;
+}
+
+#skillsText {
+	font-family: "Playfair Display", serif;
+	text-align: left;
+	display: none;
+	vertical-align: top;
+
+	position: absolute;
+}
+
+#skillsLeft {
+	display: inline-block;
+	width: 60vw;
+}
+
+#resumeText {
+	display: none;
+}
+
+#cornerDiv {
+	display: inline-block;
+	width: 19vw;
+	height: 30vh;
+	border-bottom: 4px solid #EC4E20;
+	border-right: 4px solid #EC4E20;
+}
+
+.bold {
+	font-weight: bold;
+	font-family: "Yeseva One", serif;
+}
+
+p, ul {
+	font-family: "Playfair Display", serif;
+	font-size: 1.25vw;
 }
