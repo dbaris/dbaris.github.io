@@ -131,8 +131,8 @@ button:hover, div.pagelinks:hover {
 	background: #EC9A29;
 }
 
-.clicked, .hovered {
-	background: #EC9A29;;
+.clicked {
+	background: #EC9A29;
 }
 
 #bioText {

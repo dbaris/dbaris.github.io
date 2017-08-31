@@ -4,50 +4,51 @@ $(document).ready(function() {
 
 var pageIdList = ["#resume", "#bio", "#skills"];
 
-$(document).on("click", "#name", function(){
-	$("#image").css({"display": "inline-block"});
 
-	pageIdList.map(function(x) {
-		$(x).css({"background": "none"});
-    	// $(x + ":hover").css({"color": "#EC9A29"});
-    	$(x + "Text").css({"display": "none"});
-	})
-});
 
-function displayPage(pageId) {
-    pageIdList.map(function(x) {
-    	if (pageId == x) {
-    		$(pageId).css({"background": "#EC9A29"});
-    		$(pageId + "Text").css({"display": "inline-block"});
-    	}
-    	else {
-    		$(x).css({"background": "none"});
-    		// $(x + ":hover").css({"color": "#EC9A29"});
-    		$(x + "Text").css({"display": "none"});
-    	}
-    });
+function showPage(pageId) {
+	$(pageId).css({"background": "#EC9A29"});
+	$(pageId + "Text").css({"display": "inline-block"});
 }
 
-// $('button').hover(function() {
-// 	$(this).toggleClass('hovered');
-// });
+function hidePage(pageId) {
+	$(pageId).css({"background": "none"});
+	$("button:hover").css({"background": "#EC9A29"});
+	$(pageId + "Text").css({"display": "none"});
+
+}
+
+// Landing Page
+$(document).on("click", "#name", function(){
+	$("#image").css({"display": "inline-block"});
+	hidePage("#bio");
+	hidePage("#skills");
+	hidePage("#resume");
+
+});
 
 // Bio
 $(document).on("click", "#bio", function(){
-	displayPage("#bio");
+	hidePage("#resume");
+	hidePage("#skills");
+	showPage("#bio");
 	$("#image").css({"display": "inline-block"});
 });
 
 
 //  Resume
 $(document).on("click", "#resume", function(){
-	displayPage("#resume");
+	hidePage("#bio");
+	hidePage("#skills");
+	showPage("#resume");
 	$("#image").css({"display": "none"});
 });
 
 
 // Skills
 $(document).on("click", "#skills", function(){
-	displayPage("#skills");
+	hidePage("#bio");
+	hidePage("#resume");
+	showPage("#skills");
 	$("#image").css({"display": "none"});
 });
