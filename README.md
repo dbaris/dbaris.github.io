@@ -3,7 +3,7 @@
 Deanna Baris
 Comp 20, Tufts University
 
-I believe all aspects of this project have been implemented correctly. My website includes 3 separate pages (index.html, bio.html, resume.html), and it can be accessed through the url http://www.eecs.tufts.edu/~dbaris01/. All design elements are located in css files, not within the HTML. Each html and css file passes without errors when run through the validator. 
+I believe all aspects of this project have been implemented correctly. My website includes 3 separate pages (index.html, bio.html, resume.html), and it can be accessed through the url: dbaris.github.io. All design elements are located in css files, not within the HTML. Each html and css file passes without errors when run through the validator. 
 
 Time Spent:
 ===========
