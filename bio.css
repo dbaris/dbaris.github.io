@@ -1,25 +1,22 @@
-body {
+#bioPage {
+	display: inline-block;
+	width: 80vw;
 	text-align: left;
-	/*border-color: #cc0066;
-	border-style: solid;
-	border-radius: 10px;
-	border-width: 4px;*/
-	/*margin: 10px;*/
-	margin-top: 1%;
-	padding-bottom: 3%;
+}
+
+#bioText {
+	font-family: "Playfair Display", serif;
+	width: 40vw;
+	text-align: right;
+	display: inline-block;
+	vertical-align: top;
 }
 
 h2 {
-	font-family: "Satisfy", serif;
+	font-family: "Yeseva One", serif;
 }
 
 
-p {
-	margin-left: 20%;
-	margin-right: 20%;
-	text-align: center;
-}
-
-#divbar {
-	margin: 0 auto;
+#image {
+	width: 39vw;
 }

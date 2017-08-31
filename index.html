@@ -3,25 +3,111 @@
 <head>
 	<title>Deanna Baris</title>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Abril+Fatface|Satisfy" rel="stylesheet">
+
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" />
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="main.js"></script>
 </head>
 <body>
-	<h1><a href="index.html">Deanna Baris</a></h1>
+	<div class="container">
 
-	<div id="menu"> 
-		<div class="pagelinks"><a href="bio.html">Bio</a></div>
-		<div class="pagelinks"><a href="resume.html">Resume</a></div>
-		<div class="pagelinks"><a href="skills.html">Skills</a></div>
-		<div class="pagelinks"><a href="https://github.com/dbaris">Github</a></p>
-	</div>
+	<div class="header">
+		<div id="name">
+		<h1 class="title">DEANNA <br/> BARIS</h1>
+		</div>
 
-	<div id="divbar">
-	__________________________________________________________________
+		<div id="menu"> 
+			<!-- <div class="pagelinks" ><a id="bio" href="bio.html">Bio</a></div> -->
+			<button class="btn" id="bio">Bio</button>
+			<button id="resume">Resume</button>
+			<button id="skills">Skills</button>
+			<div class="pagelinks"><a id="github" href="https://github.com/dbaris">Github</a></div>
+			<div class="pagelinks"><a id="linkedin" href="https://www.linkedin.com/in/deanna-baris-362207106/">LinkedIn</a></div>
+		</div>
 	</div>
 	
+	<div id="page">
     <div id="image">
 		<img src="images/itme.jpg" alt="personal picture">
+	</div>
+	<div id="bioText"><p id="bioP"> Deanna Baris is a senior at Tufts University majoring in Computer Science & Architectural Studies. Born in Westport, CT, she loves both computers and buildings of all shapes and sizes. When she manages to escape from the computer lab, she can be found experimenting in the kitchen, hosting a radio show on WMFO 91.5, painting, or exploring the city of Somerville on her trusty bike. </p></div>
+	<div id="resumeText">
+		<div>
+			<h2>Education</h2>
+			<p><span class="bold">Tufts University</span>, Medford, MA</p>
+			<p>Bachelors Degree, Computer Science & Architectural Studies, expected May 2018</p>
+			<p><span class="bold">Relevant Coursework:</span><br/>Data Structures, Machine Structures and 
+			Programming, Programming Languages, Machine Learning, Web Programming, Computational Theory, Calc III, Differential Equations, Discrete Math, Linear Algebra, Computer Aided Design
+		</div>
+		<div>
+			<h2>Work Experience</h2>
+			<p><span class="bold">Carbon Black</span>, Waltham, MA<br/>QA Engineering Intern, June - August 2017</p>
+			<ul>
+				<li>Extended existing CbResponse sensor test suite for Linux compatibility and added tests</li>
+				<li>Verified kernel stability of installed sensor by running Linux Test Project tests</li>
+			</ul>
+			<p>
+
+			<p><span class="bold">Teaching Assistant for Comp 105 (Programming Languages)</span>, Spring 2017 - Present</p>
+			<ul>
+				<li>Held office hours (5 per week) to assist students with homework assignments</li>
+				<li>Led weekly recitation to guide students through practice problems</li>
+				<li>Graded programming projects, proofs, and tests</li>
+			</ul>
+
+			<p><span class="bold">Teaching Assistant for Comp 40 (Machine Structures and Programming)</span>, Fall 2016</p>
+			<ul>
+				<li>Assist students one-on-one with course projects</li>
+				<li>Hold office hours for 4-6 hours per week</li>
+			</ul>
+
+			<p><span class="bold">Fermat Capital Management</span>, Westport, CT<br>Intern, May - July 2016</p>
+			<ul>
+				<li>Wrote Python program to automate adding monthly Excel report data to MySQL database</li>
+				<li>Created proof of concept for app to display client data using dynamically created graphs</li>
+				<li>Wrote unit tests for both projects and set up continuous integration</li>
+			</ul>
+		</div>
+		<div>
+			<h2>Leadership Experience</h2>
+			<p><span class="bold">UP3 (Urban Planning Club)</span>, Grad School Liason, Fall 2015 - Present</p>
+			<ul>
+				<li>Coordinate weekly meetings and events with club executive board</li>
+				<li>Facilitate communication between club and Urban & Environmental Planning graduate department</li>
+			</ul>
+
+			<p><span class="bold">Tufts Orientation Leader</span>, Fall 2015</p>
+			<ul>
+				<li>Guided freshman through events during first week of college</li>
+				<li>Assisted 15 first year students in creating individual class schedueles</li>
+			</ul>
+		</div>
+
+	</div>
+	<div id="skillsText">
+		<div id="skillsLeft">
+			<h2>Programming Languages</h2>
+			<p>C, C++, Python, Javascript, HTML/CSS, Latex, SML, Scheme, Lisp</p>
+
+			<h2>Programming Tools</h2>
+			<p>Agile, Git, MySQL, MongoDB, Heroku, Node.js, Bamboo, Jenkins</p>
+
+			<h2>Software</h2>
+			<p>Microsoft Office, Google Drive, AutoCAD, Autodesk Inventor, Revit, 3dsMax</p>
+
+			<h2>Natural Languages</h2>
+			<p>English, Spanish</p>
+		</div>
+	
+		<div id="cornerDiv"></div>
+	</div>
+
+	</div>
 	</div>
 
 	
