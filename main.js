@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 });
 
-var pageIdList = ["#resume", "#bio", "#skills"];
+var pageIdList = ["#resume", "#bio", "#skills", "#art"];
 
 
 
@@ -24,6 +24,7 @@ $(document).on("click", "#name", function(){
 	hidePage("#bio");
 	hidePage("#skills");
 	hidePage("#resume");
+	hidePage("#art");
 
 });
 
@@ -32,6 +33,7 @@ $(document).on("click", "#bio", function(){
 	hidePage("#resume");
 	hidePage("#skills");
 	showPage("#bio");
+	hidePage("#art");
 	$("#image").css({"display": "inline-block"});
 });
 
@@ -41,6 +43,7 @@ $(document).on("click", "#resume", function(){
 	hidePage("#bio");
 	hidePage("#skills");
 	showPage("#resume");
+	hidePage("#art");
 	$("#image").css({"display": "none"});
 });
 
@@ -50,5 +53,15 @@ $(document).on("click", "#skills", function(){
 	hidePage("#bio");
 	hidePage("#resume");
 	showPage("#skills");
+	hidePage("#art");
+	$("#image").css({"display": "none"});
+});
+
+// Art
+$(document).on("click", "#art", function(){
+	hidePage("#bio");
+	hidePage("#resume");
+	hidePage("#skills");
+	showPage("#art");
 	$("#image").css({"display": "none"});
 });

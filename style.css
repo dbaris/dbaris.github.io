@@ -54,7 +54,7 @@ h2 {
 	height: 90vh;
 }
 
-#github, #linkedin{
+#github, #linkedin, #instagram {
 	text-decoration-color: #EC9A29;
 }
 
@@ -79,14 +79,14 @@ h2 {
 }
 
 #image {
-	width: 40vw;
+	height: 30vh;
 	display: inline-block;
 }
 
 
 
 img {
-	width: 25vw;
+	height: 50vh;
 	padding: 3vh;
 	border-left: 4px solid #9C3848;
 	border-bottom: 4px solid #9C3848;
@@ -99,7 +99,7 @@ div.pagelinks{
 	margin-left: 3%;
 	margin-right: 3%;
 	margin-top: 2%;
-	font-size: 4vh;
+	font-size: 3.5vh;
 	font-family: "Playfair Display", serif;
 	display: block;
 	float: right;
@@ -115,7 +115,7 @@ button {
 	margin-left: 3%;
 	margin-right: 3%;
 	margin-top: 2%;
-	font-size: 4vh;
+	font-size: 3.5vh;
 	font-family: "Playfair Display", serif;
 	border: none;
 	text-decoration: underline;
@@ -163,6 +163,8 @@ button:hover, div.pagelinks:hover {
 
 #resumeText {
 	display: none;
+
+	height: 50vh;
 }
 
 #cornerDiv {
