@@ -34,7 +34,15 @@ $(document).on("click", "#bio", function(){
 	hidePage("#skills");
 	showPage("#bio");
 	hidePage("#art");
-	$("#image").css({"display": "inline-block"});
+
+	if ($(window).width() >= 1000)
+	{
+		$("#image").css({"display": "inline-block"});
+	} 
+	else 
+	{
+		$("#image").css({"display": "none"});
+	}
 });
 
 
