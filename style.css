@@ -82,7 +82,7 @@ h2 {
 }
 
 #image {
-	height: 30vh;
+	width: 25vw;
 	display: inline-block;
 }
 
@@ -193,7 +193,6 @@ iframe {
 		display: block;
 		text-align: left;
 		font-size: 3vh;
-		/*margin-left: 20%;*/
 	}
 	#menu {
 		width: 80vw;

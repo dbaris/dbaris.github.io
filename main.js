@@ -5,7 +5,6 @@ $(document).ready(function() {
 var pageIdList = ["#resume", "#bio", "#skills", "#art"];
 
 
-
 function showPage(pageId) {
 	$(pageId).css({"background": "#EC9A29"});
 	$(pageId + "Text").css({"display": "inline-block"});
@@ -13,7 +12,11 @@ function showPage(pageId) {
 
 function hidePage(pageId) {
 	$(pageId).css({"background": "none"});
-	$("button:hover").css({"background": "#EC9A29"});
+	$(pageId).hover(function() {
+  		$(this).css("background", "#EC9A29")
+	}, function() {
+    	$(this).css("background", "none"); //to remove property set it to ''
+    });
 	$(pageId + "Text").css({"display": "none"});
 
 }
