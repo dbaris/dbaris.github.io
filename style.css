@@ -6,8 +6,7 @@ body {
 }
 
 a {
-	color: black;
-	
+	color: black;	
 }
 
 .header {
@@ -42,24 +41,8 @@ h2 {
 	color: #EC4E20;   /* orange */
 }
 
-.black {
-	color: black;
-}
-
-
-
-.main {
-	height: 100%;
-	width: 100%;
-	display: table;
-}
-
 .container {
 	height: 90vh;
-}
-
-#github, #linkedin, #instagram {
-	text-decoration-color: #EC9A29;
 }
 
 #name {
@@ -81,17 +64,16 @@ h2 {
 	text-align: left;
 }
 
+
 #image {
-	width: 25vw;
 	display: inline-block;
+	padding: 3vh;
+	border-left: 4px solid #9C3848;
+	border-bottom: 4px solid #9C3848;
 }
 
 img {
 	height: 50vh;
-	padding: 3vh;
-	border-left: 4px solid #9C3848;
-	border-bottom: 4px solid #9C3848;
-
 }
 
 .pagelinks {
@@ -111,16 +93,31 @@ img {
 	background: #EC9A29;
 }
 
-.clicked {
-	background: #EC9A29;
-}
-
-#bioText {
+#bio {
 	font-family: "Playfair Display", serif;
 	width: 40vw;
 	padding-left: 10vw;
 	text-align: justify;
-	display: none;
+	vertical-align: top;
+	display: inline-block;
+}
+
+#art-title {
+	padding: 2vh;
+	/*width: vw;*/
+	text-align: center;
+}
+
+.artRow {
+	display: inline-block;
+	text-align: center;
+	width: 80vw;
+}
+
+.artImage {
+	width: 35vw;
+	display: inline-block;
+	padding-bottom: 5vh;
 	vertical-align: top;
 }
 
@@ -128,59 +125,37 @@ img {
 	font-size: 3vh;
 }
 
-#skillsText {
-	font-family: "Playfair Display", serif;
-	text-align: left;
-	display: none;
-	vertical-align: top;
-	position: absolute;
-}
-
-#skillsLeft {
-	display: inline-block;
-	width: 60vw;
-}
-
-#resumeText {
-	display: none;
-	height: 50vh;
-}
-
-#cornerDiv {
-	display: inline-block;
-	width: 19vw;
-	height: 30vh;
-	border-bottom: 4px solid #EC4E20;
-	border-right: 4px solid #EC4E20;
-}
-
-.bold {
-	font-weight: bold;
-	font-family: "Yeseva One", serif;
-}
-
 #insta {
 	color: #EC9A29;
 }
 
+.contact-p {
+	padding-left: 2vw;
+	display: inline-block;
+	font-size: 1.5vw;
+}
+
+.contact-link {
+	text-decoration-color: #9C3848;
+	display: inline-block;
+}
+
+.contact-link:hover {
+	background: #9C3848;
+}
+
+#contact-header {
+	font-size: 2.5vw;
+}
+
+#contact {
+	text-align: justify;
+}
+
+
 p, ul {
 	font-family: "Playfair Display", serif;
 	font-size: 1.25vw;
-}
-
-iframe {
-	position:fixed; 
-	top:30vh; 
-	left:10vw; 
-	bottom:0; 
-	right:0; 
-	width:80%; 
-	height:60%; 
-	border:none; 
-	margin:0; 
-	padding:0; 
-	overflow:hidden; 
-	z-index:999999;
 }
 
 @media only screen and (max-width: 1000px) { 
