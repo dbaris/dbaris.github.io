@@ -121,7 +121,11 @@ img {
 	height: 50vh;
 	padding-bottom: 50vh;
 	vertical-align: top;
+}
 
+.art-text {
+	width: 50vw;
+	padding-left: 15vw;
 }
 
 #bioP {
