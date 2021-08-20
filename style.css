@@ -159,6 +159,43 @@ img {
 	text-align: justify;
 }
 
+.slideshow-container {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.slideshow-arrow {
+	width: 10vw;
+}
+
+.slideshow-title {
+	padding-bottom: 3vh;
+}
+
+.slideshow-button {
+	border: none;
+	background: none;
+	font-size: 3vw;
+}
+
+.slideshow-image {
+	position: static;
+}
+
+.slideshow-button:hover {
+	color: #EC4E20;
+}
+
+#slideshow-contents {
+	width: 58vw;
+}
+
+footer {
+	font-size: 1vw;
+	color: #EC4E20;
+}
+
 
 p, ul {
 	font-family: "Playfair Display", serif;
