@@ -202,24 +202,29 @@ p.content {
 	/* opacity: 0; */
 }
 
-@media screen and (600px < width < 1000px) {
+@media screen and (width < 1000px) {
 	.pagelink-section {
-		font-size: 18px;
+		font-size: 24pt;
+	}
+
+	.pagelink {
+		font-size: 24pt;
+	}
+
+	h1 {
+		font-size: 36pt;
+	}
+
+	h2 {
+		font-size: 30pt;
+	}
+
+	p {
+		font-size: 12pt;
 	}
 
 	#content-block {
 		border-radius: 25px 0 0 0;
-	}
-
-}
-
-@media screen and (width <= 600px) {
-	.pagelink-section {
-		font-size: 18px;
-	}
-
-	#content-block {
-		border-radius: 25px 0 0 25px;
 		width: 98vw;
 		margin-left: 2vw;
 		float: right;
@@ -255,4 +260,3 @@ p.content {
 	}
 
 }
-
