@@ -1,0 +1,110 @@
+<!-- PROJECT LIST -->
+<button type="button" class="pagelink-section collapsible">WORK</button>
+<div id="stitch-it-together-link" class="pagelink">Stitch It Together</div>
+<!-- <div id="farm-to-frame-link" class="pagelink">Farm To Frame</div> -->
+<!-- <div id="standing-screen-link" class="pagelink">Standing Screen</div> -->
+<div id="rocking-stool-link" class="pagelink">Rocking Stool</div>
+<!-- <div id="woven-stool-link" class="pagelink">Woven Stool</div> -->
+<!-- <div id="serving-tray-link" class="pagelink">Serving Tray</div> -->
+<!-- <div id="rosa-tank-link" class="pagelink">Rosa Tank</div> -->
+<!-- <div id="daydream-cardi-link" class="pagelink">Rambling Roving Cardigan</div> -->
+<div id="paintings-link" class="pagelink">Paintings</div>
+<!-- To add...
+soundscape
+farm to frame
+float farm ?
+ -->
+
+<!-- CONTACT -->
+<div id="contact-link" class="pagelink-section">CONTACT</div>
+
+<script>
+    // TOGGLE PROJECTS
+    $( ".collapsible" ).on( "click", function() {
+        var coll = document.getElementsByClassName("pagelink");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            if (coll[i].style.display === "block") {
+                coll[i].style.display = "none";
+            } else {
+                coll[i].style.display = "block";
+            }
+        }
+    });
+
+    $(".pagelink").on("click", function() {
+        $("#contents").removeClass('bluebgd');
+        $("#contents").addClass('orangebgd');
+
+        // Transition fade
+        $("#contents").css("visibility", "visible");
+        $("#contents").css("opacity", "100");
+    });
+
+    // PAGE CONTENT CHANGE HANDLER
+    var pageList = [
+        {
+            "linkId": "#standing-screen-link",
+            "html": "standingscreen.html"
+        },
+        {
+            "linkId": "#rocking-stool-link",
+            "html": "rockingstool.html"
+        },
+        {
+            "linkId": "#woven-stool-link",
+            "html": "wovenstool.html"
+        },
+        {
+            "linkId": "#stitch-it-together-link",
+            "html": "stitchittogether.html"
+        },
+        {
+            "linkId": "#serving-tray-link",
+            "html": "servingtray.html"
+        },
+        {
+            "linkId": "#rosa-tank-link",
+            "html": "rosatank.html"
+        },
+        {
+            "linkId": "#daydream-cardi-link",
+            "html": "daydream-cardi.html"
+        },
+        {
+            "linkId": "#paintings-link",
+            "html": "paintings.html"
+        }
+
+    ];
+
+    function addPageClickHandler(page) {
+        $(page["linkId"]).on("click", function() {
+            if ($(window).width() <= 600) {
+                var coll = document.getElementsByClassName("pagelink");
+                var i;
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].style.display = "none";
+                }
+            }  
+            $("#contents").load(page["html"]);
+
+        });
+    }
+
+        for (var i = 0; i < pageList.length; i++) {
+            addPageClickHandler(pageList[i]);
+    }
+
+    // LOAD CONTACT PAGE
+    $("#contact-link").on("click", function() {
+        $("#contents").removeClass('orangebgd');
+        $("#contents").addClass('bluebgd');
+        $("#contents").load("contact.html");
+
+        // Transition fade
+        $("#contents").css("visibility", "visible");
+        $("#contents").css("opacity", "100");
+
+    });
+</script>

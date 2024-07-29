@@ -1,0 +1,16 @@
+<h1>DEANNA<br/>BARIS</h1>
+
+<!-- Toggle Projects -->
+<script>
+    $("#header").on("click", function() {
+        $( "#contents" ).css("opacity", "0");
+        $( "#contents" ).css("visibility", "hidden");
+       
+        var coll = document.getElementsByClassName("pagelink");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].style.display = "none";
+        }
+    });
+    console.log($(window).width());
+</script>

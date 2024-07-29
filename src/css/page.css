@@ -1,0 +1,42 @@
+:root {
+	/* colors */
+	--off-white: #FFFBFF;
+	--plum: #432E36;
+	--cobalt-blue: #003DBF;
+	--lilac: #D88CF8;
+	--dusty-orange: #A85751;
+	--bright-orange: #FC440F;
+}
+
+.page-title {
+    margin-top: 10vh;
+}
+
+.project-image {
+    width: 20vw;
+}
+
+#contact-title {
+    color: var(--lilac);
+}
+
+#contact-content {
+    padding-top: 5vh;
+}
+
+.contact-icon {
+    height: 50px;
+	width: 50px;
+    margin-top: 2vh;
+    margin-right: 1vw;
+}
+
+.contact-icon:hover {
+    opacity: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.page-title {
+		margin-top: 5vh;
+	}
+}
