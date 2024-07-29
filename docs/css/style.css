@@ -51,7 +51,7 @@ div {
 
 h1 {
 	font-family: manofa, serif;
-	font-size: 36pt;
+	font-size: 30pt;
 	font-weight: 300;
 	color: var(--cobalt-blue);
 }
@@ -69,7 +69,7 @@ a:hover {
 	color: var(--lilac);
 	font-family: elza, sans-serif;
 	font-weight: 400;
-	font-size: 12pt;
+	font-size: 10pt;
 	border: none;
 	text-decoration: none;
 	background: none;
@@ -89,7 +89,7 @@ a:hover {
 	color: var(--plum);
 	font-family: area-extended, sans-serif;
 	font-weight: 700;
-	font-size: 12pt;
+	font-size: 11pt;
 	border: none;
 	text-decoration: none;
 	background: none;
@@ -154,6 +154,7 @@ button:hover {
 h2 {
 	margin: 0;
 	padding: 0;
+	font-size: 18pt;
 	font-family: area-extended, sans-serif;
 	color: var(--bright-orange);
 	font-weight: 200;
