@@ -6,7 +6,7 @@
 	
 	<div class="content-row">
 		<div class="content-gallery">
-			<img class="hidden" src="images/paintings/danehy.png">
+			<img class="content-image" src="images/paintings/danehy.png">
 		</div>
 	
 		<div class="content-gallery">
@@ -19,7 +19,7 @@
 
 	<div class="content-row">
 		<div class="content-gallery">
-			<img class="hidden" src="images/paintings/rain.png">
+			<img class="content-image" src="images/paintings/rain.png">
 		</div>
 		
 		<div class="content-gallery">
@@ -32,7 +32,7 @@
 
 	<div class="content-row">
 		<div class="content-gallery">
-			<img class="hidden" src="images/paintings/allston.jpg">
+			<img class="content-image" src="images/paintings/allston.jpg">
 		</div>
 	
 		<div class="content-gallery">
@@ -44,3 +44,11 @@
 	</div>
 
 </div>
+
+<script>
+	$( document ).ready(function() {
+		$( ".content-image" ).click(function() {
+			modalOn(this.src);
+		});
+	});
+</script>

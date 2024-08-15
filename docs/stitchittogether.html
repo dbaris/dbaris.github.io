@@ -5,12 +5,12 @@
 
 	<div>
 		<div class="content-gallery-full">
-			<img class="hidden" src="images/stitch-it-together/20240420_collage.png">
+			<img class="content-image" src="images/stitch-it-together/20240420_collage.png">
 		</div>
 		
 		<div class="content-row">
 			<div class="content-gallery">
-				<img class="hidden" src="images/stitch-it-together/20240412_Router.png">
+				<img class="content-image" src="images/stitch-it-together/20240412_Router.png">
 			</div>
 
 			<div class="content-gallery">
@@ -46,13 +46,13 @@
 			</div>
 			
 			<div class="content-gallery">
-				<img class="hidden" src="images/stitch-it-together/20240415_Jacket.png">
+				<img class="content-image" src="images/stitch-it-together/20240415_Jacket.png">
 			</div>
 		</div>
 		
 		<div class="content-row">
 			<div class="content-gallery">
-				<img class="hidden" src="images/stitch-it-together/20240415_Satellite.png">
+				<img class="content-image" src="images/stitch-it-together/20240415_Satellite.png">
 			</div>
 	
 			<div class="content-gallery">
@@ -62,7 +62,7 @@
 		</div>
 		
 		<div class="content-gallery-full">
-			<img class="hidden" src="images/stitch-it-together/OBJECTS.png">
+			<img class="content-image" src="images/stitch-it-together/OBJECTS.png">
 		</div>
 		
 		<!-- TODO Add countermap -->
@@ -72,15 +72,8 @@
 
 <script>
 $( document ).ready(function() {
-    $( ".hidden" ).click(function() {
+    $( ".content-image" ).click(function() {
 		modalOn(this.src);
     });
 });
 </script>
-
-<!-- <script>
-	$('img').on("load", function() {
-		console.log('fade in!')
-        $("img").css({"opacity": ".5"});
-    });
-</script> -->

@@ -5,7 +5,7 @@
 	<div>
 		<div class="content-row">
 			<div class="content-gallery">
-				<img class="hidden" src="images/rocking-stool/RockingStool_angle.png">
+				<img class="content-image" src="images/rocking-stool/RockingStool_angle.png">
 			</div>
 		
 			<div class="content-gallery">
@@ -22,19 +22,27 @@
 		
 		<div class="content-row">
 			<div class="content-gallery">
-				<img class="hidden" src="images/rocking-stool/RockingStool_elev.png">
+				<img class="content-image" src="images/rocking-stool/RockingStool_elev.png">
 			</div>
 		
 			<div class="content-gallery">
-				<img class="hidden" src="images/rocking-stool/RockingStool_upside_down.png">
+				<img class="content-image" src="images/rocking-stool/RockingStool_upside_down.png">
 			</div>
 		</div>
 		
 		<div class="content-gallery-full">
-			<img class="hidden" src="images/rocking-stool/Axon.png">
+			<img class="content-image" src="images/rocking-stool/Axon.png">
 		</div>
 
 
 	</div>
 
 </div>
+
+<script>
+	$( document ).ready(function() {
+		$( ".content-image" ).click(function() {
+			modalOn(this.src);
+		});
+	});
+</script>

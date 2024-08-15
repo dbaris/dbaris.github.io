@@ -5,7 +5,7 @@
 	<div>
 		<div class="content-row">
 			<div class="content-gallery">
-				<img class="hidden" src="images/woven-stool/AXON.png">
+				<img class="content-image" src="images/woven-stool/AXON.png">
 			</div>
 		
 			<div class="content-gallery">
@@ -24,12 +24,20 @@
 		
 		<div class="content-row">
 			<div class="content-gallery">
-				<img class="hidden" src="images/woven-stool/ELEV.png">
+				<img class="content-image" src="images/woven-stool/ELEV.png">
 			</div>
 	
 			<div class="content-gallery">
-				<img class="hidden" src="images/woven-stool/SCREW.png">
+				<img class="content-image" src="images/woven-stool/SCREW.png">
 			</div>	
 		</div>
 	</div>
 </div>
+
+<script>
+	$( document ).ready(function() {
+		$( ".content-image" ).click(function() {
+			modalOn(this.src);
+		});
+	});
+</script>

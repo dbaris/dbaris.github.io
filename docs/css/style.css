@@ -228,12 +228,6 @@ p.content {
 	height: 100%;
 }
 
-
-.hidden {
-	/* display: none; */
-	/* opacity: 0; */
-}
-
 @media screen and (width < 1000px) {
 	.pagelink-section {
 		font-size: 24pt;

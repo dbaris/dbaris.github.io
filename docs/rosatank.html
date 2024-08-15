@@ -5,7 +5,7 @@
 	<div>
 		<div class="content-row">
 			<div class="content-gallery">
-				<img class="round-corners hidden" src="images/rosa-tank/rosa.jpg">
+				<img class="round-corners content-image" src="images/rosa-tank/rosa.jpg">
 			</div>
 		
 			<div class="content-gallery">
@@ -23,3 +23,11 @@
 	</div>
 
 </div>
+
+<script>
+	$( document ).ready(function() {
+		$( ".content-image" ).click(function() {
+			modalOn(this.src);
+		});
+	});
+</script>
