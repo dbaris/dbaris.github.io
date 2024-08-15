@@ -54,6 +54,16 @@ h1 {
 	font-size: 30pt;
 	font-weight: 300;
 	color: var(--cobalt-blue);
+	transition: .3s all;
+
+}
+
+h1:hover {
+	-webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
 }
 
 a {
@@ -78,6 +88,7 @@ a:hover {
 	margin-top: .5vh;
 	margin-bottom: 1vh;
 	margin-left: 2vw;
+	
 }
 
 .pagelink:hover {
@@ -94,6 +105,15 @@ a:hover {
 	text-decoration: none;
 	background: none;
 	outline: none;
+	transition: .3s all;
+}
+
+.pagelink-section:hover {
+	-webkit-transform: translate(5px);
+    -moz-transform: translate(5px);
+    -o-transform: translate(5px);
+    -ms-transform: translate(5px);
+    transform: translate(5px);
 }
 
 button {
@@ -173,6 +193,11 @@ img {
 	opacity: 5;
 }
 
+img:hover {
+	opacity: 20%;
+	cursor: pointer;
+}
+
 #contact-link:hover {
 	cursor: pointer;
 }
@@ -203,7 +228,7 @@ p.content {
 	height: 100%;
 }
 
- */
+
 .hidden {
 	/* display: none; */
 	/* opacity: 0; */
