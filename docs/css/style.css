@@ -85,8 +85,8 @@ a:hover {
 	background: none;
 	outline: none;
 	display: none;
-	margin-top: .5vh;
-	margin-bottom: 1vh;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 	margin-left: 2vw;
 	
 }
@@ -171,6 +171,30 @@ button:hover {
 	scrollbar-color: var(--dusty-orange) var(--off-white);
 }
 
+.content-image {
+	transition: .3s all;
+}
+
+.content-image:hover {
+	-webkit-transform: translate(15px);
+    -moz-transform: translate(15px);
+    -o-transform: translate(15px);
+    -ms-transform: translate(15px);
+    transform: translate(15px);
+}
+
+.dynamic-link {
+	transition: .3s all;
+}
+
+.dynamic-link:hover {
+	-webkit-transform: translate(15px);
+    -moz-transform: translate(15px);
+    -o-transform: translate(15px);
+    -ms-transform: translate(15px);
+    transform: translate(15px);
+}
+
 h2 {
 	margin: 0;
 	padding: 0;
@@ -223,7 +247,7 @@ img:hover {
 }
 
 p.content {
-	text-align: justify;
+	text-align: center;
 	vertical-align: middle;
 	height: 100%;
 }
